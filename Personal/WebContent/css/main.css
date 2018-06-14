@@ -1,0 +1,93 @@
+body, html{
+	height: 100%;
+	margin: 0;
+	color: #eca400;
+}
+
+.contenedor{
+	padding: 45px 45px 45px 45px;
+	width: 100%;
+	background-color: #001d4a;
+	min-height: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.center{
+	width: 100%;
+	height: 100%;
+	min-height: 90%;
+	padding: 2%;
+	background: #27476e;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.viewport{
+	overflow: auto;
+ 
+    /* Make sure the inner div is not larger than the container
+     * so that we have room to scroll.
+     */
+    max-height: 100%;
+
+    /* Pick an arbitrary margin/padding that should be bigger
+     * than the max width of all the scroll bars across
+     * the devices you are targeting.
+     * padding = -margin
+     */
+    margin-right: -100px;
+    padding-right: 100px;
+    text-align: justify;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #eca400;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #eaf8bf;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding-top: 45px;
+    padding-left: 7.5px;
+    position: absolute;
+}
+
+#main:hover {
+	color: #eaf8bf;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
